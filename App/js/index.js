@@ -19,7 +19,52 @@ xui.Class('App', 'xui.Module',{
         iniComponents : function(){
             // [[Code created by CrossUI RAD Studio
             var host=this, children=[], append=function(child){children.push(child.get(0));};
-
+            
+            append(
+                xui.create("xui.UI.ComboInput")
+                .setHost(host,"xui_ui_comboinput3")
+                .setRequired(true)
+                .setDirtyMark(false)
+                .setLeft("25.833333333333332em")
+                .setTop("7.5em")
+                .setWidth("18em")
+                .setLabelSize("8em")
+                .setLabelCaption("File")
+                .setType("file")
+            );
+            
+            append(
+                xui.create("xui.UI.ComboInput")
+                .setHost(host,"xui_ui_comboinput16")
+                .setDirtyMark(false)
+                .setLeft("25.833333333333332em")
+                .setTop("13.333333333333334em")
+                .setWidth("18em")
+                .setLabelSize("8em")
+                .setLabelCaption("File")
+                .setType("file")
+            );
+            
+            append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label7")
+                .setLeft("23.333333333333332em")
+                .setTop("5.833333333333333em")
+                .setWidth("19.083333333333332em")
+                .setHeight("2em")
+                .setCaption("Audio")
+            );
+            
+            append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label8")
+                .setLeft("30.833333333333332em")
+                .setTop("10.833333333333334em")
+                .setWidth("12.416666666666666em")
+                .setHeight("2.8333333333333335em")
+                .setCaption("Bypass")
+            );
+            
             return children;
             // ]]Code created by CrossUI RAD Studio
         },
